@@ -1,0 +1,102 @@
+.container {
+  width: 310px;
+  margin: 0 auto;
+}
+
+.nav {
+  padding: 16px 0;
+  background: rgba(0, 0, 0, 0.4);
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  position: fixed;
+  z-index: 105;
+  width: 100%;
+}
+
+.nav_menu {
+  cursor: pointer;
+}
+
+.nav_changedBackground {
+  background: black;
+  -webkit-backdrop-filter: none;
+          backdrop-filter: none;
+}
+
+.nav_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav_logoWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav_logoWrapper p {
+  font-family: "Cormorant";
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: 4.7px;
+  text-transform: uppercase;
+}
+
+.nav_logoIcon {
+  margin-bottom: 12px;
+}
+
+.nav_logoIconExtraMargin {
+  margin-left: 6px;
+}
+
+.nav_dropDown {
+  font-weight: 300;
+  font-family: "Roboto";
+}
+
+.nav_dropDown li {
+  margin: 10px 0px;
+  cursor: pointer;
+}
+
+.nav_dropDown ul {
+  margin: 30px 0px;
+}
+
+.nav_menuItemWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+}
+
+.nav_menuItemWrapper svg {
+  display: none;
+  margin-right: 8px;
+}
+
+.menu_active {
+  font-weight: 700;
+  display: inline-block !important;
+}
+/*# sourceMappingURL=navigation.module.css.map */

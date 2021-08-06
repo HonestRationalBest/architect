@@ -1,0 +1,128 @@
+body {
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cormorant";
+  font-weight: 700;
+  color: white;
+  font-size: 32px;
+}
+
+p {
+  color: white;
+  font-size: 16px;
+}
+
+button {
+  background: white;
+  border: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  color: white;
+}
+
+.container {
+  width: 310px;
+  margin: 0 auto;
+}
+
+.header {
+  background-image: url(../../img/mainBack.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.offer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 190px 0;
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
+.offer p {
+  font-size: 32px;
+}
+
+.author {
+  background: black;
+  padding-bottom: 100px;
+}
+
+.author h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 100px 0 25px 0;
+  margin: 0;
+  font-family: "Cormorant";
+}
+
+.author p {
+  font-weight: 300;
+}
+
+.author img {
+  width: 100%;
+}
+
+.author_button {
+  width: 100%;
+  font-size: 20px;
+  font-family: "Cormorant";
+  font-weight: 400;
+  margin-top: 30px;
+  padding: 10px 0;
+}
+
+.categories {
+  position: relative;
+}
+
+.categories li:nth-child(2) {
+  margin-top: 195px;
+}
+
+.categories li:nth-child(3) {
+  margin-top: 390px;
+}
+
+.active_item {
+  display: block;
+}
+
+.blur_background {
+  width: 100%;
+  height: 350vh;
+  position: absolute;
+  top: 0;
+  background: rgba(0, 0, 0, 0.4);
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  z-index: 1;
+}
+/*# sourceMappingURL=main.css.map */

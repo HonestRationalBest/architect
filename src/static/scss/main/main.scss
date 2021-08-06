@@ -1,0 +1,127 @@
+$main-font: "Roboto";
+$title-font: "Cormorant";
+
+$main-color: white;
+$background-color: black;
+
+$small: 12px;
+$normal: 16px;
+$medium: 20px;
+$large: 32px;
+
+$light: 300;
+$regular: 400;
+$bold: 700;
+
+body {
+  font-family: $main-font;
+  font-weight: $regular;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $title-font;
+  font-weight: $bold;
+  color: $main-color;
+  font-size: $large;
+}
+
+p {
+  color: $main-color;
+  font-size: $normal;
+}
+
+button {
+  background: $main-color;
+  border: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  color: $main-color;
+}
+
+.container {
+  width: 310px;
+  margin: 0 auto;
+}
+
+.header {
+  background-image: url(../../img/mainBack.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.offer {
+  display: flex;
+  justify-content: center;
+  padding: 190px 0;
+  font-family: $main-font;
+  font-weight: $regular;
+  p {
+    font-size: $large;
+  }
+}
+
+.author {
+  background: $background-color;
+  padding-bottom: 100px;
+  h2 {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0 25px 0;
+    margin: 0;
+    font-family: $title-font;
+  }
+  p {
+    font-weight: $light;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+.author_button {
+  width: 100%;
+  font-size: $medium;
+  font-family: $title-font;
+  font-weight: $regular;
+  margin-top: 30px;
+  padding: 10px 0;
+}
+
+.categories {
+  position: relative;
+  li:nth-child(2) {
+    margin-top: 195px;
+  }
+  li:nth-child(3) {
+    margin-top: 195px * 2;
+  }
+}
+
+.active_item {
+  display: block;
+}
+
+.blur_background {
+  width: 100%;
+  height: 350vh;
+  position: absolute;
+  top: 0;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(40px);
+  z-index: 1;
+}

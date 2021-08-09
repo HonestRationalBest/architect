@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "../../static/scss/main/main.css";
 import { Category } from "./components/Category";
 
@@ -7,17 +7,10 @@ import andrew from "../../static/img/andrew.png";
 import card1 from "../../static/img/card1.png";
 import card2 from "../../static/img/card2.png";
 import card3 from "../../static/img/card3.png";
-import category1 from "../../static/img/category1.png";
-import category2 from "../../static/img/category2.png";
-import category3 from "../../static/img/category3.png";
-import { CategoryItems } from "./components/CategoryItems";
 import { NavPanel } from "../../components/NavPanel/NavPanel";
+import { NavLink } from "react-router-dom";
 
 const Home = () => {
-  const [blurBackground, setBlurBackground] = useState(false);
-  const [interiors, setInterios] = useState(false);
-  const [architecture, setArchitecture] = useState(false);
-  const [furniture, setFurniture] = useState(false);
   const categories = [
     {
       id: 0,
@@ -35,43 +28,6 @@ const Home = () => {
       src: card3,
     },
   ];
-  const categoryImages1 = [
-    { id: 0, img: category1 },
-    { id: 1, img: category1 },
-    { id: 2, img: category1 },
-  ];
-  const categoryImages2 = [
-    { id: 3, img: category2 },
-    { id: 4, img: category2 },
-    { id: 5, img: category2 },
-  ];
-  const categoryImages3 = [
-    { id: 6, img: category3 },
-    { id: 7, img: category3 },
-    { id: 8, img: category3 },
-  ];
-
-  const handleOpenCategory = (
-    id,
-    setInterios,
-    setArchitecture,
-    setFurniture
-  ) => {
-    setBlurBackground(true);
-    switch (id) {
-      case 0:
-        setInterios(true);
-        break;
-      case 1:
-        setArchitecture(true);
-        break;
-      case 2:
-        setFurniture(true);
-        break;
-      default:
-        break;
-    }
-  };
 
   return (
     <main className="wrapper">
@@ -82,7 +38,7 @@ const Home = () => {
         </div>
       </header>
       <section className="author">
-        <h2>Андрей Тумас</h2>
+        <h2 id="author">Андрей Тумас</h2>
         <img src={andrew} alt="author_photo" />
         <div className="container">
           <p className="author_content">
@@ -106,25 +62,13 @@ const Home = () => {
       </section>
       <section className="categories">
         {categories.map((category) => (
-          <div
-            onClick={() =>
-              handleOpenCategory(
-                category.id,
-                setInterios,
-                setArchitecture,
-                setFurniture
-              )
-            }
-            key={category.id}
-          >
-            <Category name={category.name} src={category.src} />
+          <div key={category.id}>
+            <NavLink to={`/category/${category.id}`}>
+              <Category name={category.name} src={category.src} />
+            </NavLink>
           </div>
         ))}
-        <CategoryItems state={interiors} categoryData={categoryImages1} />
-        <CategoryItems state={architecture} categoryData={categoryImages2} />
-        <CategoryItems state={furniture} categoryData={categoryImages3} />
       </section>
-      {blurBackground && <section className="blur_background"></section>}
     </main>
   );
 };

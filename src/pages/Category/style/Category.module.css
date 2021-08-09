@@ -1,0 +1,44 @@
+.container {
+  max-width: 90%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.loader_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.loader {
+  width: 40px;
+  height: 40px;
+}
+
+.works {
+  background-image: url(../../../static/img/BluredBackground.png);
+  background-repeat: round;
+}
+
+.works ul {
+  margin: 0;
+}
+
+.works img {
+  width: 100%;
+  margin: 14px 0px;
+  background-size: cover;
+}
+
+.works_wrapper {
+  padding-top: 100px;
+}
+/*# sourceMappingURL=Category.module.css.map */

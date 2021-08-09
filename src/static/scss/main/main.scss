@@ -54,7 +54,8 @@ li {
 }
 
 .container {
-  width: 310px;
+  max-width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -62,12 +63,14 @@ li {
   background-image: url(../../img/mainBack.png);
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
 }
 
 .offer {
   display: flex;
   justify-content: center;
-  padding: 190px 0;
+  align-items: center;
+  height: 100%;
   font-family: $main-font;
   font-weight: $regular;
   p {
@@ -110,10 +113,6 @@ li {
   li:nth-child(3) {
     margin-top: 195px * 2;
   }
-}
-
-.active_item {
-  display: block;
 }
 
 .blur_background {

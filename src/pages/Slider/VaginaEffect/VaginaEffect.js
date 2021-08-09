@@ -33,10 +33,8 @@ export class VaginaEffect {
     this.images = images;
     this.scrollDoorCloserDuration = scrollDoorCloserDuration;
     this.scrollDeceleration = scrollDeceleration;
-
     this.loader = new TextureLoader();
     this.center = new Vector2();
-
     this.init();
   }
 

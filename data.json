@@ -150,5 +150,79 @@
       "itemId": 5,
       "src": "https://source.unsplash.com/random/360X520?2"
     }
+  ],
+  "works": [
+    {
+      "_id": "6110fe411ae453c149d5f578",
+      "categoryId": 2,
+      "mockId": 0,
+      "src": "https://source.unsplash.com/random/320X160?25"
+    },
+    {
+      "_id": "6110fe416cb240d90c941716",
+      "categoryId": 1,
+      "mockId": 0,
+      "src": "https://source.unsplash.com/random/320X160?56"
+    },
+    {
+      "_id": "6110fe41a69772cc34943225",
+      "categoryId": 0,
+      "mockId": 7,
+      "src": "https://source.unsplash.com/random/320X160?35"
+    },
+    {
+      "_id": "6110fe419c12720b9f739cf5",
+      "categoryId": 1,
+      "mockId": 3,
+      "src": "https://source.unsplash.com/random/320X160?40"
+    },
+    {
+      "_id": "6110fe411831d4edd17d9d3d",
+      "categoryId": 2,
+      "mockId": 2,
+      "src": "https://source.unsplash.com/random/320X160?72"
+    },
+    {
+      "_id": "6110fe4118aa705f9cec19cd",
+      "categoryId": 0,
+      "mockId": 8,
+      "src": "https://source.unsplash.com/random/320X160?6"
+    },
+    {
+      "_id": "6110fe413d1d7fc742d6ee90",
+      "categoryId": 0,
+      "mockId": 0,
+      "src": "https://source.unsplash.com/random/320X160?79"
+    },
+    {
+      "_id": "6110fe41461c523b6ba03c7b",
+      "categoryId": 0,
+      "mockId": 0,
+      "src": "https://source.unsplash.com/random/320X160?57"
+    },
+    {
+      "_id": "6110fe41e2abb475f231f7ad",
+      "categoryId": 0,
+      "mockId": 5,
+      "src": "https://source.unsplash.com/random/320X160?42"
+    },
+    {
+      "_id": "6110fe413ad79d0e3f96b50f",
+      "categoryId": 1,
+      "mockId": 0,
+      "src": "https://source.unsplash.com/random/320X160?20"
+    },
+    {
+      "_id": "6110fe41859895d1331a6ebe",
+      "categoryId": 0,
+      "mockId": 6,
+      "src": "https://source.unsplash.com/random/320X160?75"
+    },
+    {
+      "_id": "6110fe41ede0d958f04f03df",
+      "categoryId": 2,
+      "mockId": 4,
+      "src": "https://source.unsplash.com/random/320X160?86"
+    }
   ]
 }

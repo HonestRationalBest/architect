@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import style from "./style/navigation.module.css";
+import activeMenuStick from "../../static/img/activeMenuStick.svg";
 
 export const NavPanel = () => {
   const [visibleMenu, setVisibleMenu] = useState(false);
@@ -19,6 +20,7 @@ export const NavPanel = () => {
     };
   }, []);
 
+  const { id } = useParams();
   return (
     <nav
       className={
@@ -145,183 +147,30 @@ export const NavPanel = () => {
           <div className={style.nav_dropDown}>
             <ul>
               <NavLink className={style.nav_menuItemWrapper} to="/">
-                <svg
-                  width="34"
-                  height="2"
-                  viewBox="0 0 34 2"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1 1H33"
-                    stroke="url(#paint0_linear)"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                  />
-                  <defs>
-                    <linearGradient
-                      id="paint0_linear"
-                      x1="33"
-                      y1="1"
-                      x2="1"
-                      y2="1"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop stopColor="white" />
-                      <stop offset="1" stopColor="white" stopOpacity="0" />
-                    </linearGradient>
-                  </defs>
-                </svg>
                 <li>Главная</li>
               </NavLink>
               <NavLink className={style.nav_menuItemWrapper} to="/">
-                <svg
-                  width="34"
-                  height="2"
-                  viewBox="0 0 34 2"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1 1H33"
-                    stroke="url(#paint0_linear)"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                  />
-                  <defs>
-                    <linearGradient
-                      id="paint0_linear"
-                      x1="33"
-                      y1="1"
-                      x2="1"
-                      y2="1"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop stopColor="white" />
-                      <stop offset="1" stopColor="white" stopOpacity="0" />
-                    </linearGradient>
-                  </defs>
-                </svg>
                 <li>Андрей Тумас</li>
               </NavLink>
-              <NavLink className={style.nav_menuItemWrapper} to="/">
-                <svg
-                  width="34"
-                  height="2"
-                  viewBox="0 0 34 2"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1 1H33"
-                    stroke="url(#paint0_linear)"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                  />
-                  <defs>
-                    <linearGradient
-                      id="paint0_linear"
-                      x1="33"
-                      y1="1"
-                      x2="1"
-                      y2="1"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop stopColor="white" />
-                      <stop offset="1" stopColor="white" stopOpacity="0" />
-                    </linearGradient>
-                  </defs>
-                </svg>
+              <NavLink className={style.nav_menuItemWrapper} to="/category/0">
+                {id === "0" && (
+                  <img src={activeMenuStick} alt="activeMenuStick" />
+                )}
                 <li>Интерьеры</li>
               </NavLink>
-              <NavLink className={style.nav_menuItemWrapper} to="/">
-                <svg
-                  width="34"
-                  height="2"
-                  viewBox="0 0 34 2"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1 1H33"
-                    stroke="url(#paint0_linear)"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                  />
-                  <defs>
-                    <linearGradient
-                      id="paint0_linear"
-                      x1="33"
-                      y1="1"
-                      x2="1"
-                      y2="1"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop stopColor="white" />
-                      <stop offset="1" stopColor="white" stopOpacity="0" />
-                    </linearGradient>
-                  </defs>
-                </svg>
+              <NavLink className={style.nav_menuItemWrapper} to="/category/1">
+                {id === "1" && (
+                  <img src={activeMenuStick} alt="activeMenuStick" />
+                )}
                 <li>Архитектура</li>
               </NavLink>
-              <NavLink className={style.nav_menuItemWrapper} to="/">
-                <svg
-                  width="34"
-                  height="2"
-                  viewBox="0 0 34 2"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1 1H33"
-                    stroke="url(#paint0_linear)"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                  />
-                  <defs>
-                    <linearGradient
-                      id="paint0_linear"
-                      x1="33"
-                      y1="1"
-                      x2="1"
-                      y2="1"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop stopColor="white" />
-                      <stop offset="1" stopColor="white" stopOpacity="0" />
-                    </linearGradient>
-                  </defs>
-                </svg>
+              <NavLink className={style.nav_menuItemWrapper} to="/category/2">
+                {id === "2" && (
+                  <img src={activeMenuStick} alt="activeMenuStick" />
+                )}
                 <li>Мебель</li>
               </NavLink>
               <NavLink className={style.nav_menuItemWrapper} to="/">
-                <svg
-                  width="34"
-                  height="2"
-                  viewBox="0 0 34 2"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1 1H33"
-                    stroke="url(#paint0_linear)"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                  />
-                  <defs>
-                    <linearGradient
-                      id="paint0_linear"
-                      x1="33"
-                      y1="1"
-                      x2="1"
-                      y2="1"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop stopColor="white" />
-                      <stop offset="1" stopColor="white" stopOpacity="0" />
-                    </linearGradient>
-                  </defs>
-                </svg>
                 <li>+375 (29) 888-88-88</li>
               </NavLink>
             </ul>

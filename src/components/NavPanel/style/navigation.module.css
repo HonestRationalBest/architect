@@ -91,8 +91,7 @@
   width: 200px;
 }
 
-.nav_menuItemWrapper svg {
-  display: none;
+.nav_menuItemWrapper img {
   margin-right: 8px;
 }
 

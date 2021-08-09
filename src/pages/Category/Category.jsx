@@ -22,10 +22,6 @@ const Category = () => {
       .catch((e) => console.log(e));
   }, [id]);
 
-  if (!works) {
-    return;
-  }
-
   return (
     <>
       {loading ? (
@@ -33,24 +29,26 @@ const Category = () => {
           <img src={loader} alt="loader" className={style.loader} />
         </div>
       ) : (
-        <div className={style.works}>
+        <>
           <NavPanel />
-          <div className={style.container}>
-            <div className={style.works_wrapper}>
-              <ul>
-                {works.map((item) => {
-                  return (
-                    <li>
-                      <NavLink to={`/works/${item.mockId}`}>
-                        <img src={item.src} alt="" />
-                      </NavLink>
-                    </li>
-                  );
-                })}
-              </ul>
+          <div className={style.works}>
+            <div className={style.container}>
+              <div className={style.works_wrapper}>
+                <ul>
+                  {works.map((item) => {
+                    return (
+                      <li>
+                        <NavLink to={`/works/${item.mockId}`}>
+                          <img src={item.src} alt="" />
+                        </NavLink>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
+        </>
       )}
     </>
   );

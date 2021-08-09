@@ -152,19 +152,37 @@ export const NavPanel = () => {
               <NavLink className={style.nav_menuItemWrapper} to="/">
                 <li>Андрей Тумас</li>
               </NavLink>
-              <NavLink className={style.nav_menuItemWrapper} to="/category/0">
+              <NavLink
+                className={style.nav_menuItemWrapper}
+                to="/category/0"
+                activeStyle={{
+                  fontWeight: "bold",
+                }}
+              >
                 {id === "0" && (
                   <img src={activeMenuStick} alt="activeMenuStick" />
                 )}
                 <li>Интерьеры</li>
               </NavLink>
-              <NavLink className={style.nav_menuItemWrapper} to="/category/1">
+              <NavLink
+                className={style.nav_menuItemWrapper}
+                to="/category/1"
+                activeStyle={{
+                  fontWeight: "bold",
+                }}
+              >
                 {id === "1" && (
                   <img src={activeMenuStick} alt="activeMenuStick" />
                 )}
                 <li>Архитектура</li>
               </NavLink>
-              <NavLink className={style.nav_menuItemWrapper} to="/category/2">
+              <NavLink
+                className={style.nav_menuItemWrapper}
+                to="/category/2"
+                activeStyle={{
+                  fontWeight: "bold",
+                }}
+              >
                 {id === "2" && (
                   <img src={activeMenuStick} alt="activeMenuStick" />
                 )}
